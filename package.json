@@ -1,0 +1,22 @@
+{
+  "name": "unit-testing-ts",
+  "version": "1.0.0",
+  "description": "This is a very simple project that shows up how to stub external service calls in unit testing.",
+  "main": "dist/src/index",
+  "scripts": {
+    "build": "./node_modules/.bin/tsc ",
+    "start": "node dist/src/client",
+    "test": "mocha -r ts-node/register 'test/*.ts' --timeout 100000"
+  },
+  "author": "thiago l silva <thiagoolsilva@gmail.com>",
+  "dependencies": {
+    "typescript": "4.4.4",
+    "sinon": "9.2.2",
+    "ts-node": "9.1.1",
+    "mocha": "9.1.2",
+    "chai": "4.2.0",
+    "@types/mocha": "9.0.0",
+    "@types/chai": "4.2.14",
+    "@types/sinon": "9.0.9"
+  }
+}
