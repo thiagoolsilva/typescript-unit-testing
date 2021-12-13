@@ -1,0 +1,35 @@
+include:
+  - type: git
+    repo: https://github.com/batect/node-bundle.git
+    ref: 0.25.0
+
+tasks:
+  #   Build
+  build:
+    group: Build
+    description: Install all dependencies into docker volume
+    run:
+      container: node-build-env
+      command: npm run build
+  install:
+    group: Build
+    description: Build code
+    run:
+      container: node-build-env
+      command: npm install
+
+  #   General
+  start:
+    group: General
+    description: Run project
+    run:
+      container: node-build-env
+      command: npm run start
+
+  #   Test
+  unit-testing:
+    group: test
+    description: Run unit testing
+    run:
+      container: node-build-env
+      command: npm run test

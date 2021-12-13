@@ -1,25 +1,25 @@
-<h1 align="center">Welcome to tiktaktoe 👋</h1>
+<h1 align="center">Welcome to typescript-unit-testing 👋</h1>
 
 This is a very simple project that shows up how to stub external service calls in unit testing.
 
 ## Install dependencies
 ```bash
-npm install
+./batect install
 ```
 
 ## Build
 ```bash
-npm run build
+./batect build
 ```
 
 ## Start
 ```bash
-npm run start
+./batect start
 ```
 
 ## Run Unit testing
 ```bash
-npm run test
+./batect unit-testing
 ```
 
 ## Author
